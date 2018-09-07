@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "build:pdf": "gitbook pdf ./ ./_book/book.pdf",
+    "build:mobi": "gitbook mobi ./ ./_book/book.mobi",
+    "build:epub": "gitbook epub ./ ./_book/book.epub",
+    "build:files": "npm run build build:pdf && npm run build build:mobi && npm run build build:epub",
+    "build": "gitbook build && npm run build:files",
+    "serve": "gitbook serve & npm run build:files",
+    "install": "gitbook install"
+  },
+  "dependencies": {
+    "gitbook": "^3.2.3",
+    "gitbook-cli": "^2.3.2"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "title": "Selenium: Above & Beyond",
+  "author": "Andrew Michael Krug Medina",
+  "structure.readme": "/content/cover.md",
+  "links": {
+    "sidebar": {
+      "PDF Workbook": "/book.pdf",
+      "XPath Cheatsheet": "https://devhints.io/xpath",
+      "CSS Cheatsheet": "https://devhints.io/css"
+    }
+  },
+  "plugins": [
+    "include-codeblock",
+    "-sharing",
+    "asciinema",
+    "copy-pdf",
+    "recently-updated",
+    "asciinema-local",
+    "page-toc",
+    "insert-logo",
+    "hints",
+    "simpletabs",
+    "codetabs",
+    "-highlight", "prism-ext"
+  ],
+  "pluginsConfig": {
+    "api-language-selector": {
+      "theme": "dark",
+      "languages": [
+        {
+          "lang": "js",
+          "name": "JavaScript",
+          "default": true
+        },
+        {
+          "lang": "go",
+          "name": "Go"
+        }
+      ]
+    },
+    "insert-logo": {
+      "url": "data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7",
+      "style": "background: none;"
+    },
+    "hints": {
+      "info": "fa fa-info-circle",
+      "tip": "fa fa-mortar-board",
+      "danger": "fa fa-exclamation-circle",
+      "working": "fa fa-wrench"
+    },
+    "prism": {
+      "theme": "prismjs/themes/prism-coy.css",
+      "plugins": ["line-numbers"],
+      "cssClasses": "line-numbers",
+      "codeBlockExtSyntax": true
+    }
+  }
+}
