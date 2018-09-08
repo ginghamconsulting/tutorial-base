@@ -4,12 +4,28 @@
     "build:mobi": "gitbook mobi ./ ./_book/book.mobi",
     "build:epub": "gitbook epub ./ ./_book/book.epub",
     "build:files": "npm run build build:pdf && npm run build build:mobi && npm run build build:epub",
+    "build:prez": "mdx-deck build ./prez/sample.mdx -d ./presentations/sample",
+    "build:preview": "mdx-deck screenshot ./prez/sample.mdx -d ./presentations/sample",
     "build": "gitbook build && npm run build:files",
-    "serve": "gitbook serve & npm run build:files",
+    "serve": "gitbook serve & npm run build:files && cp -r presentations _book",
     "install": "gitbook install"
   },
   "dependencies": {
-    "gitbook": "^3.2.3",
-    "gitbook-cli": "^2.3.2"
+    "foreach": "^2.0.5",
+    "gitbook-plugin-asciinema": "0.0.1",
+    "gitbook-plugin-asciinema-local": "0.0.1",
+    "gitbook-plugin-codetabs": "^1.0.0",
+    "gitbook-plugin-copy-pdf": "0.0.4",
+    "gitbook-plugin-hints": "^1.0.2",
+    "gitbook-plugin-include-codeblock": "^3.2.2",
+    "gitbook-plugin-insert-logo": "^0.1.5",
+    "gitbook-plugin-page-toc": "^1.1.0",
+    "gitbook-plugin-prism-ext": "^3.1.3",
+    "gitbook-plugin-recently-updated": "^1.0.1",
+    "gitbook-plugin-simpletabs": "^0.1.1",
+    "http-signature": "^1.2.0"
+  },
+  "devDependencies": {
+    "mdx-deck": "^1.7.3"
   }
 }

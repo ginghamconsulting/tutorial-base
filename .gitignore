@@ -9,8 +9,10 @@ node_modules
 
 # Book build output
 _book
+presentations
 
 # eBook build output
 *.epub
 *.mobi
 *.pdf
+yarn-error.log

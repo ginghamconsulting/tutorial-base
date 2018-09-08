@@ -6,8 +6,10 @@
     "sidebar": {
       "PDF Workbook": "/book.pdf",
       "XPath Cheatsheet": "https://devhints.io/xpath",
-      "CSS Cheatsheet": "https://devhints.io/css"
-    }
+      "CSS Cheatsheet": "https://devhints.io/css",
+      "Day 1": "/presentations/sample/"
+
+  }
   },
   "plugins": [
     "include-codeblock",
